@@ -1,0 +1,14 @@
+name: Read index.js file
+
+on: push
+
+jobs:
+  read_file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+  
+    - name: Read file content
+      run: cat index.js
