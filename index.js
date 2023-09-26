@@ -5,3 +5,5 @@ fetch("https://www.google.com/").then((resolve, error) => {
     console.log(error);
   } else console.log(resolve);
 });
+
+console.log("Hello, Today i learned CI/CD");

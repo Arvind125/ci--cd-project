@@ -1,0 +1,19 @@
+name: Read file using Nodejs
+
+on: push
+
+jobs:
+  read_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: Install node js
+        uses: actions/set-node@v2
+        with:
+          node-version: 14
+
+      - name: Read the file using node js
+        run: node read_file.js
